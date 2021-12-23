@@ -1,8 +1,10 @@
 #include "main.h"
-#include "cfunction.h"
+#include "nvc/class.h"
+
 void opcontrol() {
-	nvc::cfunction();
-	nvc::bfunction();
-	nvc::afunction();
-	int a;
+	using namespace nvc;
+	MyClass * myClass = new MyClass(4);
+	int a = myClass->myInt;
+	int b = myClass->myMethod(a, myClass->myInt);
+	delete myClass;
 }
