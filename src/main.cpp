@@ -1,6 +1,8 @@
 #include "main.h"
-#include "afunction.h"
+#include "cfunction.h"
 void opcontrol() {
-	// int a;
+	nvc::cfunction();
+	nvc::bfunction();
 	nvc::afunction();
+	int a;
 }
